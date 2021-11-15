@@ -203,7 +203,7 @@ def get_params_dict(auto_dir, num_nodes, fixed_param_keys, opt_param_keys):
                 continue
 
         else:
-            df_inprogress = filter_df(df_cur, {**fixed_params_dict,**opt_params_dict,'status':'InProgress'})
+            df_inprogress = filter_df(df_cur, {**fixed_params_dict,'status':'InProgress'})
             if len(df_inprogress)>=1:
                 continue
             return {**fixed_params_dict,**opt_params_dict}
