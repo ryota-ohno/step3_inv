@@ -168,7 +168,7 @@ def get_params_dict(auto_dir, num_nodes, fixed_param_keys, opt_param_keys):
     df_init_params = pd.read_csv(init_params_csv)
     df_cur = pd.read_csv(os.path.join(auto_dir, 'step3_para.csv'))
     df_init_params_inprogress = df_init_params[df_init_params['status']=='InProgress']
-    #fixed_param_keys = ['a','b','theta','R3','R4']     opt_param_keys = ['cx','cy','cz']
+    fixed_param_keys = ['a','b','theta','R3','R4']   ;  opt_param_keys = ['cx','cy','cz']
 
 
     #最初の立ち上がり時
